@@ -13,8 +13,6 @@ btn.textContent = "Зберегти"
 numTel.after(btn);
 btn.onclick = btn__click;
 
-
-
 function btn__click () {
   const checkNum = document.getElementById('tel');
   const pattern = /^0\d{2}-\d{3}-\d{2}-\d{2}$/;
@@ -23,10 +21,6 @@ function btn__click () {
     setTimeout(() => {
       document.location = 'https://risovach.ru/upload/2013/03/mem/toni-stark_13447470_big_.jpeg';
     }, 3000);
-    if (document.querySelector('.error__div')) {
-      const erdiv = document.querySelector('.error__div');
-      erdiv.remove();
-    }
   } else if (!document.querySelector('.error__div')) {
     let errorDiv = document.createElement('div');
     errorDiv.classList.add('error__div');
